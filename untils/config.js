@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var nodemailer = require('nodemailer');
 
 var Mongoose = {
-  url : 'mongodb://localhost:27017/miaomiao',
+  url : 'mongodb://localhost:27017/doudou',
   connect(){
     mongoose.connect(this.url, {useNewUrlParser: true,useUnifiedTopology: true },  (err)=>{
       if(err){
