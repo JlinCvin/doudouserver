@@ -27,7 +27,7 @@ var findLogin = (data)=>{
 }
 
 var updatePassword = (email , password)=>{
-  return UserModel.update({email} , {$set: {password}})
+  return UserModel.update({email:email},{$set:{password:password}})
         .then(()=>{
           return true;
         })

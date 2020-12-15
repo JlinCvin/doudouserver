@@ -43,6 +43,7 @@ var register = async(req,res,next)=>{
     });
   
     if(result){
+      req.session.username = username
       res.send({
         msg : '注册成功',
         status : 1
